@@ -860,6 +860,7 @@ dirty_goto:
   keyboard(KSTART, 0);
 
   /* Main loop */
+  vt_set(-1, -1, -1, -1 ,-1, -1, -1, TIMESTAMP_LINE_SIMPLE, -1); // open timestamp at begin
   while (1) {
     /* See if window size changed */
     if (size_changed) {
